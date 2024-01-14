@@ -3,10 +3,12 @@
     src: url(https://raw.githubusercontent.com/prbrothers/prbrothers.github.io/main/assets/Vazir.ttf);
 }
 
-body {
-    background-color:rgb(6, 6, 37);
+html,body {
     height: 100%;
     overflow: hidden;
+}
+body {
+    background-color:rgb(6, 6, 37);
     position: relative;
 }
 .vazirr {
