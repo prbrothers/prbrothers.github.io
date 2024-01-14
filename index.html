@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR bothers</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener("scroll", preventMotion, false);
+        window.addEventListener("touchmove", preventMotion, false);
+            
+        function preventMotion(event)
+        {
+            window.scrollTo(0, 0);
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    </script>
 </head>
 <body>
     <center><div class="slin"><h1 class="jazir">PR brothers</h1></center>
-    <center><div class="slint"><h2 class="vazirr">سایت در دست ساخت می باشد</h2>
+    <center><div class="slint"><h2 class="vazirr">0سایت در دست ساخت می باشد</h2>
     <p class="vazirr">از صبوری شما متشکریم</p></div></div></center>
 
     <center><div class="slin"><a href="https://daradege.github.io/"><button>رفتن به صفحه ی نویسنده ی سایت</button></a>
