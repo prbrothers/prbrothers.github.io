@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR bothers</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function CopyInClipboard() {
+            let myVar = "PRBrothers.aternos.me:32474"
+            navigator.clipboard.writeText(myVar)
+            document.getElementById("cpy").innerHTML = "!کپی شد"
+            document.getElementById("cpy").onclick = "alert('آدرس سرور در کلیپ بورد شما موجود می باشد')"
+            
+        }
+    </script>
 </head>
 <body>
     <center><div class="slin"><h1 class="jazir">PR brothers</h1></center>
@@ -15,7 +24,7 @@
     <button onclick="alert('آدرس سرور : PRBrothers.aternos.me:32474\n\nنسخه ی سرور : 1.19.4\n\nمالکین سرور : راستین و پارسا')">اطلاعات سرور</button>
         
     <a href="https://discord.gg/JkgSn4JWzv"><button>دیسکورد</button></a>
-    <button onclick='navigator.clipboard.writeText("PRBrothers.aternos.me:32474")'>کپی آدرس سرور</button>
+    <button id="cpy" onclick='CopyInClipboard()'>کپی آدرس سرور</button>
     </div></center>
     
 
