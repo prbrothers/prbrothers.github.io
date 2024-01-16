@@ -6,7 +6,11 @@
     <title>PR bothers</title>
     
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    var pre = document.getElementById("cpy");
+        function copy_text(){
+            navigator.clipboard.writeText("متنی که قرار است کپی شود");
+            alert('متن کپی شد');
+        }
 </head>
 <body>
     <center><div class="slin"><h1 class="jazir">PR brothers</h1></center>
@@ -17,7 +21,7 @@
     <button onclick="alert('آدرس سرور : PRBrothers.aternos.me:32474\n\nنسخه ی سرور : 1.19.4\n\nمالکین سرور : راستین و پارسا')">اطلاعات سرور</button>
         
     <a href="https://discord.gg/JkgSn4JWzv"><button>دیسکورد</button></a>
-    <button id="cpy" onclick='navigator.clipboard.writeText("PRBrothers.aternos.me:32474");alert("!کپی شد")'>کپی آدرس سرور</button>
+    <a><button id="cpy" on_click ="copy_text()">کپی آدرس سرور</button></a>
     </div></center>
     
 
