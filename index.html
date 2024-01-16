@@ -7,15 +7,28 @@
     
     <link rel="stylesheet" href="style.css">
     <script>
-    var pre = document.getElementById("cpy");
-        function copy_text(){
-            navigator.clipboard.writeText("PRBrothers.aternos.me:32474");
-            alert('آدرس کپی شد!');
-        }
+    function triggerExample1() {
+  // get the container
+  const element = document.querySelector('#pdr');
+  // Create a fake `textarea` and set the contents to the text
+  // you want to copy
+  const storage = document.createElement('textarea');
+  storage.value = element.innerHTML;
+  element.appendChild(storage);
+
+  // Copy the text in the fake `textarea` and remove the `textarea`
+  storage.select();
+  storage.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  element.removeChild(storage);
+}
         </script>
 </head>
 <body>
     <center><div class="slin"><h1 class="jazir">PR brothers</h1></center>
+    <center><div class="slin">
+    <h2 id="" class="jazir">PRBrothers.aternos.me:32474</h2>
+    </div></center>
     <center><div class="slint"><h2 class="vazirr">سایت در دست ساخت می باشد</h2>
     <p class="vazirr">از صبوری شما متشکریم</p></div></div></center>
 
@@ -23,7 +36,7 @@
     <button onclick="alert('آدرس سرور : PRBrothers.aternos.me:32474\n\nنسخه ی سرور : 1.19.4\n\nمالکین سرور : راستین و پارسا')">اطلاعات سرور</button>
         
     <a href="https://discord.gg/JkgSn4JWzv"><button>دیسکورد</button></a>
-    <a id="cpy" on_click="copy_text()"><button>کپی آدرس سرور</button></a>
+    <a><button id="cpy" on_click ="copy_text()">کپی آدرس سرور</button></a>
     </div></center>
     
 
